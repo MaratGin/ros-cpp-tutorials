@@ -6,6 +6,7 @@
 
 - Ubuntu 20.04 с ROS Noetic (GCC 9, частично поддерживает стандарт C++17)
 - CMake, Git
+- catkin tools ([инструкции по установке](https://catkin-tools.readthedocs.io/en/latest/installing.html))
 
 Проверьте версии компилятора и CMake:
 ```shell
