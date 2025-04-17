@@ -1,5 +1,3 @@
 #pragma once
 
-namespace package {
-
-} // namespace package
+namespace package {}  // namespace package

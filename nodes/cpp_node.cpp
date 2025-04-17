@@ -1,11 +1,11 @@
-#include <string>
 #include <iostream>  // cout
+#include <string>
 
 #include <ros/ros.h>  // NodeHandle
 
 #include "ros_cpp_tutorials/lib.hpp"
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
   ros::init(argc, argv, "cpp_node");
 
   ros::NodeHandle nh;
