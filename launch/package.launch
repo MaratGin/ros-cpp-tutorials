@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="catkin_package_template" type="py_node.py" name="py_node_instance" output="screen" respawn="false"/>
+  <node pkg="catkin_package_template" type="cpp_node" name="cpp_node_instance" output="screen" respawn="false"/>
+</launch>

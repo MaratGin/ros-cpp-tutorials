@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>catkin_package_template</name>
+  <version>0.0.0</version>
+  <description>Description of the package goes here.</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <maintainer email="email@example.com">Maintainer</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <license>BSD</license>
+
+  <!-- Url tags are optional, but multiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <url type="repository">https://github.com/ramsafin/catkin-package-template</url>
+
+  <!-- Author tags are optional, multiple are allowed, one per tag -->
+  <!-- Authors do not have to be maintainers, but could be -->
+  <author email="email@example.com">Author</author>
+
+  <!--
+    The *depend tags are used to specify dependencies.
+    Dependencies can be catkin packages or system dependencies.
+
+    Examples:
+
+      1. Use depend as a shortcut for packages that are both build, build_export, and exec dependencies:
+        <depend>roscpp</depend>
+
+      2. Note that this is equivalent to the following:
+        <build_depend>roscpp</build_depend>
+        <exec_depend>roscpp</exec_depend>
+
+      3. Use build_depend for packages you need at compile time:
+        <build_depend>message_generation</build_depend>
+
+      4. Use build_export_depend for packages you need in order to build against this package:
+        <build_export_depend>message_generation</build_export_depend>
+
+      5. Use buildtool_depend for build tool packages:
+        <buildtool_depend>catkin</buildtool_depend>
+
+      6. Use exec_depend for packages you need at runtime:
+        <exec_depend>message_runtime</exec_depend>
+
+      7. Use test_depend for packages you need only for testing:
+        <test_depend>gtest</test_depend>
+
+      8. Use doc_depend for packages you need only for building documentation:
+        <doc_depend>doxygen</doc_depend>
+  -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Let's specify basic dependencies. -->
+  <depend>rospy</depend>
+  <depend>roscpp</depend>
+
+  <depend>roslib</depend>
+
+  <depend>std_msgs</depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!--
+      Other tools can request additional information be placed here.
+
+      Example:
+
+        <gazebo gazebo_media_path="${prefix}"/>
+        <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    -->
+  </export>
+</package>
