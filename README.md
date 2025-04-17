@@ -32,3 +32,15 @@ catkin build
 ```shell
 catkin build ros_cpp_tutorials
 ```
+
+## Темы
+
+1. Namespaces: nested, aliases, using.
+2. Header files: declarations, templates, inline functions (utils), guards.
+3. Catkin (cmake): targets, compiling, linking, cmake variables.
+4. OOP: struct/class, public/private/protected, ctr/dtr.
+5. Inheritance (public), polymorhism (virtual).
+6. RAII, smart pointers (unique_ptr, shared_ptr).
+7. Threads: thread (join/detach), async, future, mutex, lock_guard.
+8. *Thread pools (boost).
+9. ROS: init, NodeHandle, callbacks (lambda), spinners (spin, spinOnce, AsyncSpinner)
