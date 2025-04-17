@@ -20,3 +20,15 @@ g++ --version
 ```shell
 git clone <ссылка на репозиторий>
 ```
+
+## Сборка проекта
+
+Собрать проект можно следующей командой (из `workspace` и вложенных директорий):
+```shell
+catkin build
+```
+
+Собрать конкретный пакет:
+```shell
+catkin build ros_cpp_tutorials
+```
