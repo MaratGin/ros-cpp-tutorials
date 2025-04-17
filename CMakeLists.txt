@@ -29,7 +29,7 @@ target_include_directories(catkin_deps INTERFACE include ${catkin_INCLUDE_DIRS})
 
 ## Declare a C++ library.
 add_library(${PROJECT_NAME}
-  src/lib.cpp include/package/lib.hpp
+  src/lib.cpp include/ros_cpp_tutorials/lib.hpp
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC catkin_deps)

@@ -3,7 +3,7 @@
 
 #include <ros/ros.h>  // NodeHandle
 
-#include "package/lib.hpp"
+#include "ros_cpp_tutorials/lib.hpp"
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "cpp_node");

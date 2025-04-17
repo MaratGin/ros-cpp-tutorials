@@ -1,4 +1,4 @@
-#include "package/lib.hpp"
+#include "ros_cpp_tutorials/lib.hpp"
 
 namespace package {
 
