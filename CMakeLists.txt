@@ -45,6 +45,8 @@ add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EX
 add_executable(cpp_node nodes/cpp_node.cpp)
 target_link_libraries(cpp_node PRIVATE ${PROJECT_NAME})
 
+add_executable(oop src/oop.cpp)
+
 ## Mark executables for installation.
 ## See http://docs.ros.org/en/melodic/api/catkin/html/howto/format2/building_executables.html.
 install(
