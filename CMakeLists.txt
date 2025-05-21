@@ -46,6 +46,12 @@ add_executable(cpp_node nodes/cpp_node.cpp)
 target_link_libraries(cpp_node PRIVATE ${PROJECT_NAME})
 
 add_executable(oop src/oop.cpp)
+add_executable(inheritance src/inheritance/base.cpp)
+add_executable(poly src/inheritance/polymorphism.cpp)
+add_executable(raii src/raii.cpp)
+add_executable(smart_pointers src/smart_pointers.cpp)
+add_executable(smart_pointers_poly src/smart_pointers_poly.cpp)
+
 
 ## Mark executables for installation.
 ## See http://docs.ros.org/en/melodic/api/catkin/html/howto/format2/building_executables.html.
