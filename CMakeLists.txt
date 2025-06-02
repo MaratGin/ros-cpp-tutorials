@@ -41,17 +41,21 @@ target_include_directories(${PROJECT_NAME} PUBLIC include)
 ## either from message generation or dynamic reconfigure.
 add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-## Declare a C++ executable.
+## ROS examples
 add_executable(cpp_node nodes/cpp_node.cpp)
 target_link_libraries(cpp_node PRIVATE ${PROJECT_NAME})
 
+# OOP basics
 add_executable(oop src/oop.cpp)
+
+# inheritance
 add_executable(inheritance src/inheritance/base.cpp)
 add_executable(poly src/inheritance/polymorphism.cpp)
-add_executable(raii src/raii.cpp)
-add_executable(smart_pointers src/smart_pointers.cpp)
-add_executable(smart_pointers_poly src/smart_pointers_poly.cpp)
 
+# pointers
+add_executable(raii src/pointers/raii.cpp)
+add_executable(smart_pointers src/pointers/smart_pointers.cpp)
+add_executable(smart_pointers_poly src/pointers/smart_pointers_poly.cpp)
 
 ## Mark executables for installation.
 ## See http://docs.ros.org/en/melodic/api/catkin/html/howto/format2/building_executables.html.
