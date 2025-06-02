@@ -48,9 +48,11 @@ target_link_libraries(ros_node_basics PRIVATE ${PROJECT_NAME})
 # threads
 add_executable(threads src/threads/threads.cpp)
 add_executable(locks src/threads/locks.cpp)
+add_executable(async src/threads/async.cpp)
 
 target_link_libraries(threads PRIVATE pthread)
 target_link_libraries(locks PRIVATE pthread)
+target_link_libraries(async PRIVATE pthread)
 
 # OOP basics
 add_executable(oop src/oop.cpp)
