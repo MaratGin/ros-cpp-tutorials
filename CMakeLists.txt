@@ -41,9 +41,16 @@ target_include_directories(${PROJECT_NAME} PUBLIC include)
 ## either from message generation or dynamic reconfigure.
 add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-## ROS examples
+# ROS examples
 add_executable(ros_node_basics nodes/node_basics.cpp)
 target_link_libraries(ros_node_basics PRIVATE ${PROJECT_NAME})
+
+# threads
+add_executable(threads src/threads/threads.cpp)
+add_executable(locks src/threads/locks.cpp)
+
+target_link_libraries(threads PRIVATE pthread)
+target_link_libraries(locks PRIVATE pthread)
 
 # OOP basics
 add_executable(oop src/oop.cpp)
