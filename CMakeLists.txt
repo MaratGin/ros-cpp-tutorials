@@ -42,8 +42,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC include)
 add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## ROS examples
-add_executable(cpp_node nodes/cpp_node.cpp)
-target_link_libraries(cpp_node PRIVATE ${PROJECT_NAME})
+add_executable(ros_node_basics nodes/node_basics.cpp)
+target_link_libraries(ros_node_basics PRIVATE ${PROJECT_NAME})
 
 # OOP basics
 add_executable(oop src/oop.cpp)
@@ -60,7 +60,7 @@ add_executable(smart_pointers_poly src/pointers/smart_pointers_poly.cpp)
 ## Mark executables for installation.
 ## See http://docs.ros.org/en/melodic/api/catkin/html/howto/format2/building_executables.html.
 install(
-  TARGETS cpp_node
+  TARGETS ros_node_basics
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
